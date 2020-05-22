@@ -10,13 +10,21 @@ import SwiftUI
 
 struct SnackRow: View {
     
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
+    
+    @Environment(\.colorScheme) var colorScheme: ColorScheme
+    
+    var size:CGFloat {
+        return horizontalSizeClass == .compact ? 150 : 300
+    }
+    
     var treat: Treat
     
     var body: some View {
         HStack{
             Image(treat.imageName)
                 .resizable()
-                .frame(width: 200, height: 200)
+                .frame(width: size, height: size)
             
             VStack(alignment: .leading){
                 Text(treat.name)
@@ -26,13 +34,25 @@ struct SnackRow: View {
                     .font(Font.system(.footnote))
                 .lineLimit(nil)
             }
-            
+            .padding(colorScheme == .dark ? 20 : 0 )
+            .background(colorScheme == .dark ? Color.red : Color.green )
         }
     }
 }
 
 struct SnackRow_Previews: PreviewProvider {
     static var previews: some View {
-        SnackRow(treat: Treat.demoTreats.randomElement()!)
+       
+        Group {
+             SnackRow(treat: Treat.demoTreats.randomElement()!)
+                .previewLayout(.sizeThatFits)
+                .environment(\.horizontalSizeClass, .regular)
+            
+            SnackRow(treat: Treat.demoTreats.randomElement()!)
+                .previewLayout(.sizeThatFits)
+                .environment(\.horizontalSizeClass, .compact)
+            
+        }
+        
     }
 }

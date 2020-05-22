@@ -9,18 +9,25 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
+    
+    
+    
     var body: some View {
         
         NavigationView {
             
             VStack {
-                Image("FlyingFish")
-                    .resizable()
-                    .frame(width: 200, height: 200, alignment: .center)
+                if horizontalSizeClass == .regular {
+                    Image("FlyingFish")
+                        .resizable()
+                        .frame(width: 200, height: 200, alignment: .center)
+                }
                 
                 KittySnackView()
             }
-             .navigationBarTitle(Text("Browse Kitty Snacks"))
+            .navigationBarTitle(Text("Browse Kitty Snacks"))
         }
     }
 }
@@ -28,5 +35,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environment(\.colorScheme, .dark)
     }
 }
