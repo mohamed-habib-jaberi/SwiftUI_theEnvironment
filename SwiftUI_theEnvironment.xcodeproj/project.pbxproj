@@ -13,6 +13,11 @@
 		613DBF0C247701420069869A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613DBF0B247701420069869A /* Assets.xcassets */; };
 		613DBF0F247701420069869A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 613DBF0E247701420069869A /* Preview Assets.xcassets */; };
 		613DBF12247701420069869A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 613DBF10247701420069869A /* LaunchScreen.storyboard */; };
+		613DBF1A2477C94C0069869A /* Treat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DBF192477C94C0069869A /* Treat.swift */; };
+		613DBF1C2477C9860069869A /* SnackRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DBF1B2477C9860069869A /* SnackRow.swift */; };
+		613DBF1E2477CB640069869A /* KittySnackPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DBF1D2477CB640069869A /* KittySnackPicker.swift */; };
+		613DBF202477CDB00069869A /* ListRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DBF1F2477CDB00069869A /* ListRow.swift */; };
+		613DBF222477CEAE0069869A /* KittySnackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613DBF212477CEAE0069869A /* KittySnackView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		613DBF0E247701420069869A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		613DBF11247701420069869A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		613DBF13247701420069869A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		613DBF192477C94C0069869A /* Treat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Treat.swift; sourceTree = "<group>"; };
+		613DBF1B2477C9860069869A /* SnackRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnackRow.swift; sourceTree = "<group>"; };
+		613DBF1D2477CB640069869A /* KittySnackPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittySnackPicker.swift; sourceTree = "<group>"; };
+		613DBF1F2477CDB00069869A /* ListRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListRow.swift; sourceTree = "<group>"; };
+		613DBF212477CEAE0069869A /* KittySnackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KittySnackView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +67,11 @@
 			isa = PBXGroup;
 			children = (
 				613DBF05247701400069869A /* AppDelegate.swift */,
+				613DBF192477C94C0069869A /* Treat.swift */,
+				613DBF1F2477CDB00069869A /* ListRow.swift */,
+				613DBF212477CEAE0069869A /* KittySnackView.swift */,
+				613DBF1B2477C9860069869A /* SnackRow.swift */,
+				613DBF1D2477CB640069869A /* KittySnackPicker.swift */,
 				613DBF07247701400069869A /* SceneDelegate.swift */,
 				613DBF09247701400069869A /* ContentView.swift */,
 				613DBF0B247701420069869A /* Assets.xcassets */,
@@ -148,7 +163,12 @@
 			files = (
 				613DBF06247701400069869A /* AppDelegate.swift in Sources */,
 				613DBF08247701400069869A /* SceneDelegate.swift in Sources */,
+				613DBF1E2477CB640069869A /* KittySnackPicker.swift in Sources */,
+				613DBF1C2477C9860069869A /* SnackRow.swift in Sources */,
+				613DBF1A2477C94C0069869A /* Treat.swift in Sources */,
+				613DBF202477CDB00069869A /* ListRow.swift in Sources */,
 				613DBF0A247701400069869A /* ContentView.swift in Sources */,
+				613DBF222477CEAE0069869A /* KittySnackView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        NavigationView {
+            
+            VStack {
+                Image("FlyingFish")
+                    .resizable()
+                    .frame(width: 200, height: 200, alignment: .center)
+                
+                KittySnackView()
+            }
+             .navigationBarTitle(Text("Browse Kitty Snacks"))
+        }
     }
 }
 
